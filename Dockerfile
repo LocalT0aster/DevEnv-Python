@@ -5,7 +5,9 @@ FROM python:3.12-slim-bookworm
 WORKDIR /app
 
 # Install software
-RUN apt-get update && apt-get install -y openssh-server git gh build-essential nano
+RUN apt-get update && apt-get install -y openssh-server git gh curl build-essential nano
+# Install VSCode to run server
+RUN curl https://gist.githubusercontent.com/LocalT0aster/db41108f292c0d683001f4345ec53c43/raw/9b81a68bc65442b69c4f29ae290e0205ed8f1902/vscode-deb.sh | sudo bash
 RUN apt clean
 
 # Install any needed packages specified in requirements.txt

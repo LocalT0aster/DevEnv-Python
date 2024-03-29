@@ -32,4 +32,7 @@ Now you can easily connect to your environment using `ssh [SERVER_ALIAS]`.
 
 In order to run the environment, you need to have [docker](https://docs.docker.com/engine/install/) installed on your target server (server that will handle your development environment).
 
+> **WARNING**
+> Do not forget to add the `requirements.txt` after cloning.
+
 > TODO write setup instructions
